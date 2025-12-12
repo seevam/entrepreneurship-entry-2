@@ -7,7 +7,7 @@ export const scenes: Record<string, Scene> = {
     title: 'Every Journey Begins with a Choice',
     content: `Welcome! You're about to experience entrepreneurship education differently.
 
-Instead of reading a traditional submission, you'll explore my teaching methodology through an interactive journey. Make choices, discover stories, and unlock insights as you go.
+Instead of reading a traditional submission, you'll explore my teaching methodology through an interactive journey. Make choices, discover stories, and unlock insights as you go. But if you want to keep it simple, I have a PDF attached as well.
 
 Where would you like to begin?`,
     path: 'philosophy',
@@ -144,7 +144,7 @@ My job is to create a safe space where students can explore, fail, learn, and gr
     title: 'Six Core Principles',
     content: `My teaching is built on six interconnected principles:
 
-1. **Connection First** - Build trust before teaching
+1. **Connection First** - Build bond before teaching
 2. **Personal Experience** - Start from their world
 3. **Learning by Doing** - Action over theory
 4. **Embrace Challenge** - Growth through struggle
@@ -187,10 +187,10 @@ Each principle reinforces the others, creating a framework that adapts to every 
   // ==================== STUDENT SUCCESS PATH ====================
   's1-meet-elise': {
     id: 's1-meet-elise',
-    title: 'Meet Elise',
-    content: `Elise Thompson - 16 years old, passionate about reading, concerned about her generation.
+    title: 'Meet Elise and The Reading Room',
+    content: `Elise Tang - 14 years old, passionate about reading, concerned about her generation.
 
-She observed something troubling: Her peers spent 5 hours daily scrolling social media while attention spans dropped to 47 seconds. Reading felt boring compared to TikTok.
+She observed something troubling: Her peers spent around 5 hours daily scrolling social media. Reading felt boring compared to TikTok.
 
 But Elise had a vision: What if reading could be as engaging as social media, without the mental health costs?`,
     path: 'student',
@@ -201,7 +201,6 @@ But Elise had a vision: What if reading could be as engaging as social media, wi
       data: {
         stats: [
           { label: 'Daily Social Media', value: '5 hours', icon: '📱' },
-          { label: 'Attention Span', value: '47 seconds', icon: '⏱️' },
           { label: 'Mental Health Crisis', value: 'Rising', icon: '😔' },
           { label: 'Reading Engagement', value: 'Declining', icon: '📚' }
         ]
@@ -241,13 +240,13 @@ But Elise had a vision: What if reading could be as engaging as social media, wi
   's2-challenge': {
     id: 's2-challenge',
     title: 'The First Challenge',
-    content: `Elise's first challenge wasn't technical - it was belief.
+    content: `In our journey of working on this project, the first challenge wasn't the idea but the trust that I had build in her that she can do this.
 
-"Who am I to solve this?" she asked. "I'm just 16. No one will take me seriously."
+"Who am I to solve this?" she asked. "I'm just 14. No one will take me seriously."
 
-This is where the real teaching begins. Not with business models or marketing plans, but with helping students see their own potential.
+This is where the real mentoring begins. Not with business models or marketing plans, but with supporting students see their own potential.
 
-I asked her: "Who better to solve this than someone who lives it every day?"`,
+And I remember I asked her: "Who better to solve this than someone who lives it every day?"`,
     path: 'student',
     type: 'story',
     choices: [
@@ -338,8 +337,8 @@ I asked her: "Who better to solve this than someone who lives it every day?"`,
 
 **Before:**
 - Doubted her abilities
-- Unsure of her future
-- Consumed by social media
+- Unsure of how the prodcut would be built
+
 
 **After:**
 - Confident entrepreneur
@@ -347,7 +346,7 @@ I asked her: "Who better to solve this than someone who lives it every day?"`,
 - Building solutions for her generation
 - Leading with empathy
 
-She didn't just learn entrepreneurship. She became an entrepreneur.`,
+She didn't just learn entrepreneurship. She becaming an entrepreneur.`,
     path: 'student',
     type: 'story',
     choices: [
