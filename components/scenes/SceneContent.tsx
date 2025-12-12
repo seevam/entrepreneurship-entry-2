@@ -6,6 +6,20 @@ interface SceneContentProps {
   scene: Scene;
 }
 
+// Simple markdown bold parser
+function parseMarkdown(text: string) {
+  const parts = text.split(/(\*\*.*?\*\*)/g);
+
+  return parts.map((part, index) => {
+    if (part.startsWith('**') && part.endsWith('**')) {
+      // Remove the ** markers and make it bold
+      const boldText = part.slice(2, -2);
+      return <strong key={index} className="font-bold text-gray-900">{boldText}</strong>;
+    }
+    return <span key={index}>{part}</span>;
+  });
+}
+
 export default function SceneContent({ scene }: SceneContentProps) {
   return (
     <div className="bg-white rounded-2xl p-8 shadow-md border-2 border-gray-100">
@@ -13,7 +27,11 @@ export default function SceneContent({ scene }: SceneContentProps) {
       <div className="prose prose-lg max-w-none">
         {typeof scene.content === 'string' ? (
           <div className="whitespace-pre-line text-gray-800 leading-relaxed">
-            {scene.content}
+            {scene.content.split('\n').map((line, lineIndex) => (
+              <div key={lineIndex}>
+                {parseMarkdown(line)}
+              </div>
+            ))}
           </div>
         ) : (
           scene.content
