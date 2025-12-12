@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --duolingo-green: #58CC02;
+  --duolingo-blue: #1CB0F6;
+  --duolingo-red: #FF4B4B;
+  --duolingo-yellow: #FFC800;
+  --duolingo-purple: #CE82FF;
+}
+
+body {
+  @apply bg-white text-gray-900;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+* {
+  @apply scroll-smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-400 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-500;
+}
+
+/* Markdown prose styles */
+.prose {
+  @apply text-gray-800;
+}
+
+.prose strong {
+  @apply text-gray-900 font-bold;
+}
+
+.prose h1,
+.prose h2,
+.prose h3 {
+  @apply font-bold text-gray-900;
+}
+
+/* Animation utilities */
+@keyframes bounce-gentle {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-bounce-gentle {
+  animation: bounce-gentle 1s ease-in-out infinite;
+}
