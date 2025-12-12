@@ -20,7 +20,7 @@ Where would you like to begin?`,
         icon: '🧭',
         color: 'duolingo-blue',
         description: 'Discover the core principles',
-        image: 'https://images.unsplash.com/photo-1476973422084-e0fa66ff9456?w=800&auto=format&fit=crop&q=80'
+        image: 'https://i.postimg.cc/pXXXGXhP/Screenshot-2025-12-13-at-01-37-56.png'
       },
       {
         id: 'student',
@@ -29,7 +29,7 @@ Where would you like to begin?`,
         icon: '🌟',
         color: 'duolingo-yellow',
         description: 'Experience real transformation',
-        image: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&auto=format&fit=crop&q=80'
+        image: 'https://i.postimg.cc/nhBK3k9w/Screenshot-2025-12-13-at-01-29-24.png'
       },
       {
         id: 'methodology',
@@ -38,7 +38,7 @@ Where would you like to begin?`,
         icon: '⚙️',
         color: 'duolingo-green',
         description: 'See how it works',
-        image: 'https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?w=800&auto=format&fit=crop&q=80'
+        image: 'https://i.postimg.cc/MGX9dRxj/Screenshot-2025-12-13-at-01-44-10.png'
       },
       {
         id: 'fasttrack',
@@ -47,7 +47,7 @@ Where would you like to begin?`,
         icon: '⚡',
         color: 'duolingo-red',
         description: 'Speed run (5 minutes)',
-        image: 'https://images.unsplash.com/photo-1484417894907-623942c8ee29?w=800&auto=format&fit=crop&q=80'
+        image: 'https://i.postimg.cc/pXgYQ7rh/Screenshot-2025-12-13-at-01-30-27.png'
       }
     ],
     metadata: {
