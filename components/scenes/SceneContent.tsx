@@ -38,7 +38,7 @@ export default function SceneContent({ scene }: SceneContentProps) {
         )}
       </div>
 
-      {/* Interactive Element */}
+      {/* Interactive Element - Stats */}
       {scene.interactiveElement && scene.interactiveElement.type === 'stats' && (
         <div className="mt-8 grid grid-cols-2 gap-4">
           {scene.interactiveElement.data.stats.map((stat: any, index: number) => (
@@ -51,6 +51,56 @@ export default function SceneContent({ scene }: SceneContentProps) {
               <div className="text-2xl font-bold text-gray-900 mt-1">{stat.value}</div>
             </div>
           ))}
+        </div>
+      )}
+
+      {/* Interactive Element - External Links */}
+      {scene.interactiveElement && scene.interactiveElement.type === 'links' && (
+        <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
+          {scene.interactiveElement.data.links.map((link: any, index: number) => {
+            const colorClasses = {
+              'duolingo-blue': 'bg-gradient-to-br from-[#1CB0F6] to-[#14A1E7] hover:from-[#14A1E7] hover:to-[#0D8ECE] border-[#0D8ECE]',
+              'duolingo-green': 'bg-gradient-to-br from-[#58CC02] to-[#4FB801] hover:from-[#4FB801] hover:to-[#46A302] border-[#46A302]',
+              'duolingo-yellow': 'bg-gradient-to-br from-[#FFC800] to-[#F0B900] hover:from-[#F0B900] hover:to-[#E0A900] border-[#E0A900]',
+              'duolingo-red': 'bg-gradient-to-br from-[#FF4B4B] to-[#F03C3C] hover:from-[#F03C3C] hover:to-[#E02C2C] border-[#E02C2C]',
+              'duolingo-purple': 'bg-gradient-to-br from-[#CE82FF] to-[#BF73F0] hover:from-[#BF73F0] hover:to-[#B064E0] border-[#B064E0]'
+            };
+
+            const colorClass = link.color && colorClasses[link.color as keyof typeof colorClasses]
+              ? colorClasses[link.color as keyof typeof colorClasses]
+              : colorClasses['duolingo-blue'];
+
+            return (
+              <a
+                key={index}
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`${colorClass} border-b-4 text-white rounded-2xl p-6 transition-all duration-300 hover:shadow-2xl hover:scale-105 active:scale-100 group flex items-center justify-between`}
+              >
+                <div className="flex items-center gap-4">
+                  <span className="text-5xl">{link.icon}</span>
+                  <div>
+                    <div className="text-xl font-bold">{link.label}</div>
+                    <div className="text-sm opacity-90 mt-1">{link.description}</div>
+                  </div>
+                </div>
+                <svg
+                  className="w-6 h-6 flex-shrink-0 transition-transform group-hover:translate-x-1"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={3}
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                  />
+                </svg>
+              </a>
+            );
+          })}
         </div>
       )}
 

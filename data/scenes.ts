@@ -401,6 +401,28 @@ A gamified social reading platform that transforms reading from a solitary activ
 **Current Traction:** Instagram @read.w.elise with 384+ engaged followers`,
     path: 'student',
     type: 'interactive',
+    interactiveElement: {
+      type: 'links',
+      data: {
+        links: [
+          {
+            label: 'Visit Website',
+            url: 'https://read-w-elise.my.canva.site/',
+            icon: '🌐',
+            color: 'duolingo-blue',
+            description: 'Explore The Reading Room'
+          },
+          {
+            label: 'Instagram',
+            url: 'https://www.instagram.com/read.w.elise/',
+            icon: '📸',
+            color: 'duolingo-purple',
+            description: '@read.w.elise - 384+ followers'
+          }
+        ]
+      },
+      component: 'ExternalLinks'
+    },
     choices: [
       {
         id: 'methodology',

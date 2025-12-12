@@ -27,7 +27,7 @@ export interface Choice {
 }
 
 export interface InteractiveElement {
-  type: 'stats' | 'timeline' | 'comparison' | 'quiz' | 'diagram';
+  type: 'stats' | 'timeline' | 'comparison' | 'quiz' | 'diagram' | 'links';
   data: any;
   component: string;
 }
