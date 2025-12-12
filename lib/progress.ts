@@ -32,15 +32,16 @@ export class ProgressManager {
   }
 
   private getDefaultProgress(): Progress {
+    const now = Date.now();
     return {
       currentScene: 'start',
       visitedScenes: ['start'],
       unlockedBadges: [],
       pathsExplored: [],
       choices: [],
-      stats: this.calculateStats(['start'], []),
-      startTime: Date.now(),
-      lastUpdated: Date.now()
+      stats: this.calculateStats(['start'], [], now),
+      startTime: now,
+      lastUpdated: now
     };
   }
 
@@ -121,10 +122,11 @@ export class ProgressManager {
     }
   }
 
-  private calculateStats(visitedScenes: string[], unlockedBadges: string[]): Stats {
+  private calculateStats(visitedScenes: string[], unlockedBadges: string[], startTime?: number): Stats {
     const totalScenes = Object.keys(scenes).length;
     const totalBadges = Object.keys(badges).length;
-    const timeSpent = Math.floor((Date.now() - this.progress.startTime) / 1000);
+    const start = startTime ?? this.progress?.startTime ?? Date.now();
+    const timeSpent = Math.floor((Date.now() - start) / 1000);
 
     return {
       totalScenes,
