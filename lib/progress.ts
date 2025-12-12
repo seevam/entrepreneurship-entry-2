@@ -159,7 +159,7 @@ export class ProgressManager {
 // React Hook
 export function useProgress() {
   const [manager] = useState(() => new ProgressManager());
-  const [progress, setProgress] = useState<Progress>(manager.getDefaultProgress());
+  const [progress, setProgress] = useState<Progress>(manager.getProgress());
 
   useEffect(() => {
     setProgress(manager.loadProgress());
