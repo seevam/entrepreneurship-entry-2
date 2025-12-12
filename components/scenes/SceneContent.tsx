@@ -1,6 +1,8 @@
 'use client';
 
 import { Scene } from '@/types/scene';
+import Image from 'next/image';
+import { useState } from 'react';
 
 interface SceneContentProps {
   scene: Scene;
@@ -101,6 +103,80 @@ export default function SceneContent({ scene }: SceneContentProps) {
               </a>
             );
           })}
+        </div>
+      )}
+
+      {/* Interactive Element - Product Showcase */}
+      {scene.interactiveElement && scene.interactiveElement.type === 'showcase' && (
+        <div className="mt-8 space-y-8">
+          {/* Image Gallery */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            {scene.interactiveElement.data.images.map((imageUrl: string, index: number) => (
+              <div
+                key={index}
+                className="relative h-64 md:h-80 rounded-2xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105 group cursor-pointer bg-gray-100"
+              >
+                <Image
+                  src={imageUrl}
+                  alt={`Screenshot ${index + 1}`}
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-110"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              </div>
+            ))}
+          </div>
+
+          {/* External Links */}
+          {scene.interactiveElement.data.links && (
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {scene.interactiveElement.data.links.map((link: any, index: number) => {
+                const colorClasses = {
+                  'duolingo-blue': 'bg-gradient-to-br from-[#1CB0F6] to-[#14A1E7] hover:from-[#14A1E7] hover:to-[#0D8ECE] border-[#0D8ECE]',
+                  'duolingo-green': 'bg-gradient-to-br from-[#58CC02] to-[#4FB801] hover:from-[#4FB801] hover:to-[#46A302] border-[#46A302]',
+                  'duolingo-yellow': 'bg-gradient-to-br from-[#FFC800] to-[#F0B900] hover:from-[#F0B900] hover:to-[#E0A900] border-[#E0A900]',
+                  'duolingo-red': 'bg-gradient-to-br from-[#FF4B4B] to-[#F03C3C] hover:from-[#F03C3C] hover:to-[#E02C2C] border-[#E02C2C]',
+                  'duolingo-purple': 'bg-gradient-to-br from-[#CE82FF] to-[#BF73F0] hover:from-[#BF73F0] hover:to-[#B064E0] border-[#B064E0]'
+                };
+
+                const colorClass = link.color && colorClasses[link.color as keyof typeof colorClasses]
+                  ? colorClasses[link.color as keyof typeof colorClasses]
+                  : colorClasses['duolingo-blue'];
+
+                return (
+                  <a
+                    key={index}
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`${colorClass} border-b-4 text-white rounded-2xl p-6 transition-all duration-300 hover:shadow-2xl hover:scale-105 active:scale-100 group flex items-center justify-between`}
+                  >
+                    <div className="flex items-center gap-4">
+                      <span className="text-5xl">{link.icon}</span>
+                      <div>
+                        <div className="text-xl font-bold">{link.label}</div>
+                        <div className="text-sm opacity-90 mt-1">{link.description}</div>
+                      </div>
+                    </div>
+                    <svg
+                      className="w-6 h-6 flex-shrink-0 transition-transform group-hover:translate-x-1"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={3}
+                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                      />
+                    </svg>
+                  </a>
+                );
+              })}
+            </div>
+          )}
         </div>
       )}
 

@@ -402,8 +402,13 @@ A gamified social reading platform that transforms reading from a solitary activ
     path: 'student',
     type: 'interactive',
     interactiveElement: {
-      type: 'links',
+      type: 'showcase',
       data: {
+        images: [
+          'https://i.postimg.cc/nhSyFnh5/Screenshot-2025-12-13-at-01-51-03.png',
+          'https://i.postimg.cc/Mp3C6zpD/Screenshot-2025-12-13-at-01-52-21.png',
+          'https://i.postimg.cc/T3NzdT3W/Screenshot-2025-12-13-at-01-52-33.png'
+        ],
         links: [
           {
             label: 'Visit Website',
@@ -421,7 +426,7 @@ A gamified social reading platform that transforms reading from a solitary activ
           }
         ]
       },
-      component: 'ExternalLinks'
+      component: 'ProductShowcase'
     },
     choices: [
       {
