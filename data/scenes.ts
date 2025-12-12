@@ -412,7 +412,7 @@ A gamified social reading platform that transforms reading from a solitary activ
         links: [
           {
             label: 'Visit Website',
-            url: 'https://read-w-elise.my.canva.site/',
+            url: 'https://elisetang10.wixsite.com/elise',
             icon: '🌐',
             color: 'duolingo-blue',
             description: 'Explore The Reading Room'
