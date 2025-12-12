@@ -61,7 +61,7 @@ Where would you like to begin?`,
   'p1-foundation': {
     id: 'p1-foundation',
     title: 'Where It All Begins',
-    content: `The journey of an entrepreneurship program doesn't start from the problem or idea. It starts from the first meeting between student and teacher.
+    content: `Innovation in entrepreneurship education requires a delicate balance between structured guidance and creative freedom. This project exemplifies how personalized mentoring can transform a student's hobby into an emerging business venture, and The journey of an entrepreneurship program doesn't start from the problem or idea. It starts from the first meeting between student and mentor.
 
 I believe every student is a flower ready to bloom. My role isn't to tell them what to become, but to create the conditions where they can discover themselves.
 
