@@ -102,7 +102,7 @@ The foundation of everything I do rests on one principle: **Connection First, Co
   'p2-discovery': {
     id: 'p2-discovery',
     title: 'The Art of Discovery',
-    content: `I don't look for students with perfect GPAs or polished business plans. I look for curiosity, empathy, and a willingness to try.
+    content: `I believe in one simple idea: every student I work with has equal potential to break through with the idea that they are passionate about. I look for curiosity, empathy, and a willingness to try.
 
 The best entrepreneurs I've taught weren't the ones who knew all the answers. They were the ones who asked the best questions and cared deeply about solving real problems.
 
