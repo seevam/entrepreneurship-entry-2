@@ -19,7 +19,8 @@ Where would you like to begin?`,
         targetScene: 'p1-foundation',
         icon: '🧭',
         color: 'duolingo-blue',
-        description: 'Discover the core principles'
+        description: 'Discover the core principles',
+        image: 'https://i.postimg.cc/pXXXGXhP/Screenshot-2025-12-13-at-01-37-56.png'
       },
       {
         id: 'student',
@@ -27,7 +28,8 @@ Where would you like to begin?`,
         targetScene: 's1-meet-elise',
         icon: '🌟',
         color: 'duolingo-yellow',
-        description: 'Experience real transformation'
+        description: 'Experience real transformation',
+        image: 'https://i.postimg.cc/nhBK3k9w/Screenshot-2025-12-13-at-01-29-24.png'
       },
       {
         id: 'methodology',
@@ -35,7 +37,8 @@ Where would you like to begin?`,
         targetScene: 'm1-hub',
         icon: '⚙️',
         color: 'duolingo-green',
-        description: 'See how it works'
+        description: 'See how it works',
+        image: 'https://i.postimg.cc/MGX9dRxj/Screenshot-2025-12-13-at-01-44-10.png'
       },
       {
         id: 'fasttrack',
@@ -43,7 +46,8 @@ Where would you like to begin?`,
         targetScene: 'ft1-express',
         icon: '⚡',
         color: 'duolingo-red',
-        description: 'Speed run (5 minutes)'
+        description: 'Speed run (5 minutes)',
+        image: 'https://i.postimg.cc/pXgYQ7rh/Screenshot-2025-12-13-at-01-30-27.png'
       }
     ],
     metadata: {
@@ -57,7 +61,7 @@ Where would you like to begin?`,
   'p1-foundation': {
     id: 'p1-foundation',
     title: 'Where It All Begins',
-    content: `The journey of an entrepreneurship program doesn't start from the problem or idea. It starts from the first meeting between student and teacher.
+    content: `Innovation in entrepreneurship education requires a delicate balance between structured guidance and creative freedom. This project exemplifies how personalized mentoring can transform a student's hobby into an emerging business venture, and The journey of an entrepreneurship program doesn't start from the problem or idea. It starts from the first meeting between student and mentor.
 
 I believe every student is a flower ready to bloom. My role isn't to tell them what to become, but to create the conditions where they can discover themselves.
 
@@ -98,7 +102,7 @@ The foundation of everything I do rests on one principle: **Connection First, Co
   'p2-discovery': {
     id: 'p2-discovery',
     title: 'The Art of Discovery',
-    content: `I don't look for students with perfect GPAs or polished business plans. I look for curiosity, empathy, and a willingness to try.
+    content: `I believe in one simple idea: every student I work with has equal potential to break through with the idea that they are passionate about. I look for curiosity, empathy, and a willingness to try.
 
 The best entrepreneurs I've taught weren't the ones who knew all the answers. They were the ones who asked the best questions and cared deeply about solving real problems.
 
@@ -397,6 +401,33 @@ A gamified social reading platform that transforms reading from a solitary activ
 **Current Traction:** Instagram @read.w.elise with 384+ engaged followers`,
     path: 'student',
     type: 'interactive',
+    interactiveElement: {
+      type: 'showcase',
+      data: {
+        images: [
+          'https://i.postimg.cc/nhSyFnh5/Screenshot-2025-12-13-at-01-51-03.png',
+          'https://i.postimg.cc/Mp3C6zpD/Screenshot-2025-12-13-at-01-52-21.png',
+          'https://i.postimg.cc/T3NzdT3W/Screenshot-2025-12-13-at-01-52-33.png'
+        ],
+        links: [
+          {
+            label: 'Visit Website',
+            url: 'https://read-w-elise.my.canva.site/',
+            icon: '🌐',
+            color: 'duolingo-blue',
+            description: 'Explore The Reading Room'
+          },
+          {
+            label: 'Instagram',
+            url: 'https://www.instagram.com/read.w.elise/',
+            icon: '📸',
+            color: 'duolingo-purple',
+            description: '@read.w.elise - 384+ followers'
+          }
+        ]
+      },
+      component: 'ProductShowcase'
+    },
     choices: [
       {
         id: 'methodology',

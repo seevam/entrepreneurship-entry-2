@@ -23,10 +23,11 @@ export interface Choice {
   icon?: string;
   color?: 'duolingo-blue' | 'duolingo-green' | 'duolingo-yellow' | 'duolingo-red' | 'duolingo-purple';
   description?: string;
+  image?: string;
 }
 
 export interface InteractiveElement {
-  type: 'stats' | 'timeline' | 'comparison' | 'quiz' | 'diagram';
+  type: 'stats' | 'timeline' | 'comparison' | 'quiz' | 'diagram' | 'links' | 'showcase';
   data: any;
   component: string;
 }

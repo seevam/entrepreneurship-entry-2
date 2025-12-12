@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Scene } from '@/types/scene';
 import SceneContent from './SceneContent';
 import ChoiceButton from './ChoiceButton';
+import ChoiceCard from './ChoiceCard';
 
 interface SceneWrapperProps {
   scene: Scene;
@@ -40,21 +41,41 @@ export default function SceneWrapper({ scene, onChoice }: SceneWrapperProps) {
           <SceneContent scene={scene} />
 
           {/* Choices */}
-          <div className="mt-8 space-y-4">
-            {scene.choices.map((choice, index) => (
-              <motion.div
-                key={choice.id}
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: index * 0.1 }}
-              >
-                <ChoiceButton
-                  choice={choice}
-                  onClick={() => handleChoice(choice.id, choice.targetScene)}
-                />
-              </motion.div>
-            ))}
-          </div>
+          {scene.id === 'start' ? (
+            // Card layout for start scene
+            <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
+              {scene.choices.map((choice, index) => (
+                <motion.div
+                  key={choice.id}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: index * 0.1, duration: 0.4 }}
+                >
+                  <ChoiceCard
+                    choice={choice}
+                    onClick={() => handleChoice(choice.id, choice.targetScene)}
+                  />
+                </motion.div>
+              ))}
+            </div>
+          ) : (
+            // Button layout for other scenes
+            <div className="mt-8 space-y-4">
+              {scene.choices.map((choice, index) => (
+                <motion.div
+                  key={choice.id}
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: index * 0.1 }}
+                >
+                  <ChoiceButton
+                    choice={choice}
+                    onClick={() => handleChoice(choice.id, choice.targetScene)}
+                  />
+                </motion.div>
+              ))}
+            </div>
+          )}
         </div>
       </motion.div>
     </AnimatePresence>
