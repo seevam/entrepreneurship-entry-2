@@ -29,7 +29,11 @@ export default function SceneWrapper({ scene, onChoice }: SceneWrapperProps) {
         {/* Scene Header */}
         <div className="max-w-4xl mx-auto">
           <motion.h1
-            className="text-4xl md:text-5xl font-bold text-gray-900 mb-6"
+            className={`text-4xl md:text-5xl font-bold mb-6 ${
+              scene.id === 'start'
+                ? 'bg-gradient-to-r from-duolingo-blue via-duolingo-purple to-duolingo-green bg-clip-text text-transparent'
+                : 'text-gray-900'
+            }`}
             initial={{ scale: 0.9 }}
             animate={{ scale: 1 }}
             transition={{ type: 'spring', stiffness: 200 }}
