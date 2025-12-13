@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Shivam - Entrepreneur Teacher Award Submission",
-  description: "Experience entrepreneurship education through an interactive Duolingo-style journey",
+  description: "Experience entrepreneurship education through an interactive journey",
   keywords: ["entrepreneurship", "education", "teaching", "interactive", "gamification"],
 };
 
