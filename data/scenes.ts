@@ -7,9 +7,10 @@ export const scenes: Record<string, Scene> = {
     title: 'Every Journey Begins with a Choice',
     content: `Welcome! You're about to experience entrepreneurship education differently.
 
-Instead of reading a traditional submission, you'll explore my teaching methodology and one of the project that's close to my heart is Elises The Reading Room, through an interactive journey.
+Instead of reading a traditional submission, you'll explore my teaching methodology and one of the projects that's close to my heart is Elise's The Reading Room, through an interactive journey.
 
 While Elise is building a community platform for readers, she is leveraging tech and AI, the two tools that have traditionally been linked to harming human interaction, using them instead to bridge the gap between communities that share a love for reading.
+
 
 Make choices, discover stories, and unlock insights as you go. However if you want to keep it simple, I have a PDF attached as well.
 
