@@ -146,7 +146,7 @@ My job is to create a safe space where students can explore, fail, learn, and gr
 
   'p3-principles': {
     id: 'p3-principles',
-    title: 'Six Core Principles',
+    title: 'My Core Principles',
     content: `I try to adopt the following principles in my sessions. Each one reinforces the others, creating a framework that adapts to every student while maintaining consistency.
 
 1. **Connection First** - Build bond before teaching
