@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "The Journey - Interactive Teaching Award Submission",
+  title: "Shivam - Entrepreneur Teacher Award Submission",
   description: "Experience entrepreneurship education through an interactive Duolingo-style journey",
   keywords: ["entrepreneurship", "education", "teaching", "interactive", "gamification"],
 };
