@@ -7,7 +7,7 @@ export const scenes: Record<string, Scene> = {
     title: 'Every Journey Begins with a Choice',
     content: `Welcome! You're about to experience entrepreneurship education differently.
 
-Instead of reading a traditional submission, you'll explore my teaching methodology through an interactive journey. Make choices, discover stories, and unlock insights as you go.
+Instead of reading a traditional submission, you'll explore my teaching methodology through an interactive journey. Make choices, discover stories, and unlock insights as you go. But if you want to keep it simple, I have a PDF attached as well.
 
 Where would you like to begin?`,
     path: 'philosophy',
@@ -24,7 +24,7 @@ Where would you like to begin?`,
       },
       {
         id: 'student',
-        text: 'I want to see student success',
+        text: 'I want to see Elise project success',
         targetScene: 's1-meet-elise',
         icon: '🌟',
         color: 'duolingo-yellow',
@@ -146,6 +146,7 @@ My job is to create a safe space where students can explore, fail, learn, and gr
 
 1. **Connection First** - Build bond before teaching
 
+1. **Connection First** - Build bond before teaching
 2. **Personal Experience** - Start from their world
 
 3. **Learning by Doing** - Action over theory
@@ -190,10 +191,10 @@ Each principle reinforces the others, creating a framework that adapts to every 
   // ==================== STUDENT SUCCESS PATH ====================
   's1-meet-elise': {
     id: 's1-meet-elise',
-    title: 'Meet Elise',
-    content: `Elise Thompson - 16 years old, passionate about reading, concerned about her generation.
+    title: 'Meet Elise and The Reading Room',
+    content: `Elise Tang - 14 years old, passionate about reading, concerned about her generation.
 
-She observed something troubling: Her peers spent 5 hours daily scrolling social media while attention spans dropped to 47 seconds. Reading felt boring compared to TikTok.
+She observed something troubling: Her peers spent around 5 hours daily scrolling social media. Reading felt boring compared to TikTok.
 
 But Elise had a vision: What if reading could be as engaging as social media, without the mental health costs?`,
     path: 'student',
@@ -204,7 +205,6 @@ But Elise had a vision: What if reading could be as engaging as social media, wi
       data: {
         stats: [
           { label: 'Daily Social Media', value: '5 hours', icon: '📱' },
-          { label: 'Attention Span', value: '47 seconds', icon: '⏱️' },
           { label: 'Mental Health Crisis', value: 'Rising', icon: '😔' },
           { label: 'Reading Engagement', value: 'Declining', icon: '📚' }
         ]
@@ -244,13 +244,13 @@ But Elise had a vision: What if reading could be as engaging as social media, wi
   's2-challenge': {
     id: 's2-challenge',
     title: 'The First Challenge',
-    content: `Elise's first challenge wasn't technical - it was belief.
+    content: `In our journey of working on this project, the first challenge wasn't the idea but the trust that I had build in her that she can do this.
 
-"Who am I to solve this?" she asked. "I'm just 16. No one will take me seriously."
+"Who am I to solve this?" she asked. "I'm just 14. No one will take me seriously."
 
-This is where the real teaching begins. Not with business models or marketing plans, but with helping students see their own potential.
+This is where the real mentoring begins. Not with business models or marketing plans, but with supporting students see their own potential.
 
-I asked her: "Who better to solve this than someone who lives it every day?"`,
+And I remember I asked her: "Who better to solve this than someone who lives it every day?"`,
     path: 'student',
     type: 'story',
     choices: [
@@ -341,8 +341,8 @@ I asked her: "Who better to solve this than someone who lives it every day?"`,
 
 **Before:**
 - Doubted her abilities
-- Unsure of her future
-- Consumed by social media
+- Unsure of how the prodcut would be built
+
 
 **After:**
 - Confident entrepreneur
@@ -350,7 +350,7 @@ I asked her: "Who better to solve this than someone who lives it every day?"`,
 - Building solutions for her generation
 - Leading with empathy
 
-She didn't just learn entrepreneurship. She became an entrepreneur.`,
+She didn't just learn entrepreneurship. She becaming an entrepreneur.`,
     path: 'student',
     type: 'story',
     choices: [
@@ -415,7 +415,7 @@ A gamified social reading platform that transforms reading from a solitary activ
         links: [
           {
             label: 'Visit Website',
-            url: 'https://read-w-elise.my.canva.site/',
+            url: 'https://elisetang10.wixsite.com/elise',
             icon: '🌐',
             color: 'duolingo-blue',
             description: 'Explore The Reading Room'
@@ -541,7 +541,7 @@ Every student is a flower ready to bloom.
 6. Iterate constantly
 
 **Student Success: Elise & The Reading Room**
-- 16-year-old concerned about social media's impact
+- 14-year-old concerned about social media's impact
 - Built gamified reading platform
 - 384+ Instagram followers, growing organically
 - Addressing $138B book market
@@ -580,15 +580,15 @@ Every student is a flower ready to bloom.
     content: `Thank you for experiencing my teaching methodology through this interactive journey.
 
 **What You've Discovered:**
-- A teaching philosophy built on connection and trust
+- My teaching philosophy built on connection and trust
 - A methodology that transforms students into entrepreneurs
-- Real student success stories (like Elise and The Reading Room)
+- Real student success stories (like Elise's The Reading Room)
 - A framework that adapts to every student
 
 **The Impact:**
 This isn't just about teaching entrepreneurship. It's about empowering students to see themselves as changemakers, to trust their instincts, and to build solutions for problems they care about.
 
-Every student is a flower ready to bloom. My role is to create the conditions for that growth.`,
+Every student is a flower ready to bloom. My role is to create the conditions for that growth. Happy Holidays and Merry Christmas`,
     path: 'final',
     type: 'summary',
     choices: [
