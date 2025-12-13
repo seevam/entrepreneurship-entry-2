@@ -34,7 +34,7 @@ Where would you like to begin?`,
       {
         id: 'methodology',
         text: 'Explore the methodology',
-        targetScene: 'm1-hub',
+        targetScene: 'm3-hands-on',
         icon: '⚙️',
         color: 'duolingo-green',
         description: 'See how it works',
@@ -80,7 +80,7 @@ The foundation of everything I do rests on one principle: **Connection First, Co
       {
         id: 'methodology',
         text: 'What\'s your teaching methodology?',
-        targetScene: 'm1-hub',
+        targetScene: 'm3-hands-on',
         icon: '⚙️',
         color: 'duolingo-green'
       },
@@ -142,24 +142,28 @@ My job is to create a safe space where students can explore, fail, learn, and gr
   'p3-principles': {
     id: 'p3-principles',
     title: 'Six Core Principles',
-    content: `My teaching is built on six interconnected principles:
+    content: `I try to adopt following principles in my sessions. Each one reinforces the others, creating a framework that adapts to every student while maintaining consistency.
+
+1. **Connection First** - Build bond before teaching
 
 1. **Connection First** - Build bond before teaching
 2. **Personal Experience** - Start from their world
+
 3. **Learning by Doing** - Action over theory
+
 4. **Embrace Challenge** - Growth through struggle
-5. **Sustainable Thinking** - Long-term impact matters
-6. **Iterative Mindset** - Fail fast, learn faster
+
+5. **Iterative Mindset** - Fail fast, learn faster
 
 Each principle reinforces the others, creating a framework that adapts to every student.`,
     path: 'philosophy',
     type: 'story',
     choices: [
       {
-        id: 'methodology',
-        text: 'How do you apply these?',
-        targetScene: 'm1-hub',
-        icon: '⚙️',
+        id: 'hands-on',
+        text: 'Show me the practical approach',
+        targetScene: 'm3-hands-on',
+        icon: '🛠️',
         color: 'duolingo-green'
       },
       {
@@ -260,7 +264,7 @@ And I remember I asked her: "Who better to solve this than someone who lives it 
       {
         id: 'methodology',
         text: 'What was your approach?',
-        targetScene: 'm1-hub',
+        targetScene: 'm3-hands-on',
         icon: '⚙️',
         color: 'duolingo-green'
       },
@@ -318,7 +322,7 @@ And I remember I asked her: "Who better to solve this than someone who lives it 
       {
         id: 'methodology',
         text: 'How did you teach this?',
-        targetScene: 'm1-hub',
+        targetScene: 'm3-hands-on',
         icon: '⚙️',
         color: 'duolingo-blue'
       }
@@ -431,7 +435,7 @@ A gamified social reading platform that transforms reading from a solitary activ
       {
         id: 'methodology',
         text: 'How did you teach this?',
-        targetScene: 'm1-hub',
+        targetScene: 'm3-hands-on',
         icon: '⚙️',
         color: 'duolingo-green'
       },
@@ -458,127 +462,12 @@ A gamified social reading platform that transforms reading from a solitary activ
   },
 
   // ==================== METHODOLOGY PATH ====================
-  'm1-hub': {
-    id: 'm1-hub',
-    title: 'How Transformation Happens',
-    content: `My methodology is built on six interconnected principles. Each one reinforces the others, creating a framework that adapts to every student while maintaining consistency.
-
-**The Six Principles:**
-1. 🤝 Connection First
-2. 👤 Personal Experience
-3. 🛠️ Learning by Doing
-4. 💪 Embrace Challenge
-5. ♻️ Sustainable Thinking
-6. 🔄 Iterative Mindset
-
-Explore each aspect to understand how they work together.`,
-    path: 'methodology',
-    type: 'hub',
-    badge: 'methodology-master',
-    choices: [
-      {
-        id: 'sessions',
-        text: 'Show me weekly session structure',
-        targetScene: 'm2-sessions',
-        icon: '📅',
-        color: 'duolingo-green'
-      },
-      {
-        id: 'practical',
-        text: 'How do you teach practical skills?',
-        targetScene: 'm3-hands-on',
-        icon: '🛠️',
-        color: 'duolingo-blue'
-      },
-      {
-        id: 'student',
-        text: 'See this applied to a student',
-        targetScene: 's1-meet-elise',
-        icon: '🌟',
-        color: 'duolingo-yellow'
-      },
-      {
-        id: 'back',
-        text: 'Back to start',
-        targetScene: 'start',
-        icon: '🏠',
-        color: 'duolingo-purple'
-      }
-    ],
-    metadata: {
-      estimatedTime: 120,
-      difficulty: 'medium',
-      keywords: ['methodology', 'framework', 'principles']
-    }
-  },
-
-  'm2-sessions': {
-    id: 'm2-sessions',
-    title: 'Weekly Session Structure',
-    content: `Each week follows a proven structure:
-
-**Week 1-2: Connection & Discovery**
-- Get to know the student
-- Understand their passions and concerns
-- Identify problems they care about
-
-**Week 3-4: Ideation & Validation**
-- Brainstorm solutions
-- Market research
-- Customer interviews
-
-**Week 5-6: Planning & Design**
-- Business model development
-- Product/service design
-- Brand identity
-
-**Week 7-10: Building & Testing**
-- MVP development
-- User testing
-- Iteration based on feedback
-
-**Week 11-12: Launch & Reflect**
-- Go-to-market strategy
-- Launch execution
-- Reflection and growth`,
-    path: 'methodology',
-    type: 'story',
-    choices: [
-      {
-        id: 'practical',
-        text: 'What skills do they learn?',
-        targetScene: 'm3-hands-on',
-        icon: '🛠️',
-        color: 'duolingo-green'
-      },
-      {
-        id: 'student',
-        text: 'Show me student example',
-        targetScene: 's1-meet-elise',
-        icon: '🌟',
-        color: 'duolingo-yellow'
-      },
-      {
-        id: 'back',
-        text: 'Back to methodology',
-        targetScene: 'm1-hub',
-        icon: '↩️',
-        color: 'duolingo-blue'
-      }
-    ],
-    metadata: {
-      estimatedTime: 120,
-      difficulty: 'medium',
-      keywords: ['sessions', 'structure', 'curriculum']
-    }
-  },
-
   'm3-hands-on': {
     id: 'm3-hands-on',
     title: 'Learning by Doing',
     content: `Students don't just learn about entrepreneurship - they do it.
 
-**Practical Skills Developed:**
+Each idea and process could be unique, however I try to bring following practical knowledge to them:
 
 **Market Research**
 - Customer interviews
@@ -600,9 +489,10 @@ Explore each aspect to understand how they work together.`,
 - Content creation
 - Community building
 
-Every skill is learned through real application to their own venture.`,
+We leverage AI tools in our session to smoothen the learning process and development work too.`,
     path: 'methodology',
     type: 'story',
+    badge: 'methodology-master',
     choices: [
       {
         id: 'student',
@@ -620,9 +510,9 @@ Every skill is learned through real application to their own venture.`,
       },
       {
         id: 'back',
-        text: 'Back to methodology',
-        targetScene: 'm1-hub',
-        icon: '↩️',
+        text: 'Back to start',
+        targetScene: 'start',
+        icon: '🏠',
         color: 'duolingo-green'
       }
     ],

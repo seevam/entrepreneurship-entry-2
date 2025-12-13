@@ -53,7 +53,7 @@ export default function ProgressBar({ stats, unlockedBadges, onHomeClick }: Prog
           </div>
 
           {/* Badges Display */}
-          <div className="flex gap-2">
+          <div className="hidden md:flex gap-2">
             {Object.values(badges).map((badge) => {
               const isUnlocked = unlockedBadges.includes(badge.id);
               return (
