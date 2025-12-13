@@ -46,7 +46,7 @@ Where would you like to begin?`,
         targetScene: 'ft1-express',
         icon: '⚡',
         color: 'duolingo-red',
-        description: 'Speed run (5 minutes)',
+        description: 'Speed run (2 minutes)',
         image: 'https://i.postimg.cc/pXgYQ7rh/Screenshot-2025-12-13-at-01-30-27.png'
       }
     ],
@@ -289,7 +289,7 @@ And I remember I asked her: "Who better to solve this than someone who lives it 
     content: `The journey from idea to product took 6 months of iterative development:
 
 **Month 1-2:** Market research and validation
-- Surveyed 200+ students about reading habits
+- Surveyed 50+ students about reading habits
 - Analyzed competitors (Goodreads, StoryGraph)
 - Identified unique value proposition
 
@@ -299,7 +299,7 @@ And I remember I asked her: "Who better to solve this than someone who lives it 
 - Developed brand identity
 
 **Month 5-6:** MVP development and testing
-- Built Instagram presence (@read.w.elise)
+- Built Instagram presence (@read.w.elise)(Elise had already set up her Instagram when we started)
 - Grew to 384+ followers organically
 - Validated product-market fit`,
     path: 'student',
@@ -577,9 +577,9 @@ Every student is a flower ready to bloom.
   'final-summary': {
     id: 'final-summary',
     title: 'Your Journey Complete',
-    content: `Thank you for experiencing my teaching methodology through this interactive journey.
+    content: `Thank you for experiencing my teaching methodology and Elise's project through this interactive journey.
 
-**What You've Discovered:**
+**I believe, you enjoyed learning:**
 - My teaching philosophy built on connection and trust
 - A methodology that transforms students into entrepreneurs
 - Real student success stories (like Elise's The Reading Room)
