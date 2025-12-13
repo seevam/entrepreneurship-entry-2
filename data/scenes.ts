@@ -24,7 +24,7 @@ Where would you like to begin?`,
       },
       {
         id: 'student',
-        text: 'I want to see student success',
+        text: 'I want to see Elise project success',
         targetScene: 's1-meet-elise',
         icon: '🌟',
         color: 'duolingo-yellow',
@@ -651,7 +651,7 @@ Every student is a flower ready to bloom.
 6. Iterate constantly
 
 **Student Success: Elise & The Reading Room**
-- 16-year-old concerned about social media's impact
+- 14-year-old concerned about social media's impact
 - Built gamified reading platform
 - 384+ Instagram followers, growing organically
 - Addressing $138B book market
@@ -690,15 +690,15 @@ Every student is a flower ready to bloom.
     content: `Thank you for experiencing my teaching methodology through this interactive journey.
 
 **What You've Discovered:**
-- A teaching philosophy built on connection and trust
+- My teaching philosophy built on connection and trust
 - A methodology that transforms students into entrepreneurs
-- Real student success stories (like Elise and The Reading Room)
+- Real student success stories (like Elise's The Reading Room)
 - A framework that adapts to every student
 
 **The Impact:**
 This isn't just about teaching entrepreneurship. It's about empowering students to see themselves as changemakers, to trust their instincts, and to build solutions for problems they care about.
 
-Every student is a flower ready to bloom. My role is to create the conditions for that growth.`,
+Every student is a flower ready to bloom. My role is to create the conditions for that growth. Happy Holidays and Merry Christmas`,
     path: 'final',
     type: 'summary',
     choices: [
