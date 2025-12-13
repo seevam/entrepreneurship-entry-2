@@ -60,7 +60,7 @@ export default function Home() {
       />
 
       {/* Scene Content */}
-      <div className="pt-24">
+      <div className="pt-32 md:pt-28">
         <SceneWrapper scene={currentScene} onChoice={handleChoice} />
       </div>
     </main>
