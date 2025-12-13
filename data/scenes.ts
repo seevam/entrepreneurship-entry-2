@@ -142,11 +142,10 @@ My job is to create a safe space where students can explore, fail, learn, and gr
   'p3-principles': {
     id: 'p3-principles',
     title: 'Six Core Principles',
-    content: `I try to adopt following principles in my sessions. Each one reinforces the others, creating a framework that adapts to every student while maintaining consistency.
+    content: `I try to adopt the following principles in my sessions. Each one reinforces the others, creating a framework that adapts to every student while maintaining consistency.
 
 1. **Connection First** - Build bond before teaching
 
-1. **Connection First** - Build bond before teaching
 2. **Personal Experience** - Start from their world
 
 3. **Learning by Doing** - Action over theory
@@ -542,7 +541,7 @@ Every student is a flower ready to bloom.
 
 **Student Success: Elise & The Reading Room**
 - 14-year-old concerned about social media's impact
-- Built gamified reading platform
+- Built a gamified reading platform
 - 384+ Instagram followers, growing organically
 - Addressing $138B book market
 
