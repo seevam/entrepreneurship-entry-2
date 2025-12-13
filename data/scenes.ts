@@ -587,7 +587,7 @@ Every student is a flower ready to bloom.
 **The Impact:**
 This isn't just about teaching entrepreneurship. It's about empowering students to see themselves as changemakers, to trust their instincts, and to build solutions for problems they care about.
 
-Every student is a flower ready to bloom. My role is to create the conditions for that growth. Happy Holidays and Merry Christmas`,
+Every student is a flower ready to bloom. My role is to create the conditions for that growth. Happy Holidays and Merry Christmas! 🎄🎁`,
     path: 'final',
     type: 'summary',
     choices: [
