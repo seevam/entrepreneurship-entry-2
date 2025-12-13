@@ -575,7 +575,7 @@ Every student is a flower ready to bloom.
   // ==================== FINAL SUMMARY ====================
   'final-summary': {
     id: 'final-summary',
-    title: 'Your Journey Complete',
+    title: 'Your Journey Completes Here',
     content: `Thank you for experiencing my teaching methodology and Elise's project through this interactive journey.
 
 **I believe, you enjoyed learning:**
