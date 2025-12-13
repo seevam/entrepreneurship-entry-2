@@ -349,7 +349,7 @@ And I remember I asked her: "Who better to solve this than someone who lives it 
 - Building solutions for her generation
 - Leading with empathy
 
-She didn't just learn entrepreneurship. She becaming an entrepreneur.`,
+She didn't just learn entrepreneurship. She is becoming an entrepreneur.`,
     path: 'student',
     type: 'story',
     choices: [
