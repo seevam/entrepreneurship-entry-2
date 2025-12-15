@@ -12,7 +12,7 @@ Instead of reading a traditional submission, you'll explore my teaching methodol
 While Elise is building a community platform for readers, she is leveraging tech and AI, the two tools that have traditionally been linked to harming human interaction, using them instead to bridge the gap between communities that share a love for reading.
 
 
-Make choices, discover stories, and unlock insights as you go. However if you want to keep it simple, I have a PDF attached as well.
+Make choices, discover stories, and unlock insights as you go. However if you want to keep it simple, I have a PDF attached as well: https://tinyurl.com/eliseproject
 
 Where would you like to begin?`,
     path: 'philosophy',
